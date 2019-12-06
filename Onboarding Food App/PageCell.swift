@@ -18,9 +18,9 @@ class PageCell: UICollectionViewCell{
             mainImageView.image = UIImage(named: unwrappedPage.imageName)
             
             let textView = UITextView()
-            let attributedText =  NSMutableAttributedString(string: unwrappedPage.headerText, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 22), NSAttributedString.Key.foregroundColor:UIColor.lightbrown])
+            let attributedText =  NSMutableAttributedString(string: unwrappedPage.headerText, attributes: [NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 22), NSAttributedString.Key.foregroundColor:UIColor.black])
             
-            attributedText.append(NSAttributedString(string: "\n\n\(unwrappedPage.bodyText)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.lightbrown]))
+            attributedText.append(NSAttributedString(string: "\n\n\(unwrappedPage.bodyText)", attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 16), NSAttributedString.Key.foregroundColor: UIColor.black]))
             
             
             textDescriptionView.attributedText = attributedText
@@ -30,7 +30,7 @@ class PageCell: UICollectionViewCell{
     }
     
     private let mainImageView:UIImageView = {
-        let imageView = UIImageView(image: #imageLiteral(resourceName: "dapur"))
+        let imageView = UIImageView(image: #imageLiteral(resourceName: "bayar"))
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
         return imageView
